@@ -24,3 +24,12 @@
 //     clickCount = parseInt(localStorage.getItem("clickCount"));
 // }
 // button.addEventListener("click", clickCountFxn);
+
+const buttons = document.getElementsByTagName("button");
+const buttonPressed = e => {
+    console.log(e.target.id);
+}
+
+for (let button of buttons) {
+    button.addEventListener("click", buttonPressed);
+}
