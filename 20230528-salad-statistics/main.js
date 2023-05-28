@@ -3,7 +3,7 @@
 // Using Local Storage
 // Pro: Persists after refresh or close, so I don't lose data.
 // Con: Cannot easily reset....
-// or can I?
+// Requires manual delete using devConsole.  Revist later it's fine for now.
 // =============
 
 // let button = document.getElementById("my-button");
@@ -14,6 +14,10 @@
 //     clickCount++;
 //     display.innerHTML = `Button clicked: ${clickCount} times.`;
 //     localStorage.setItem("clickCount", clickCount);
+// }
+
+// const resetLocal = () => {
+//     localStorage.clear();
 // }
 
 // if (localStorage.getItem("clickCount")) {
